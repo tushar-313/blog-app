@@ -79,17 +79,6 @@ http://localhost:3000/posts
 
 ---
 
-## 📸 Screenshots
-
-*Add screenshots of:*
-
-* Blog list page
-* Create post page
-* Edit post page
-* Post detail page
-
----
-
 ## 📌 Current Limitations
 
 * No database (data stored temporarily in memory)
