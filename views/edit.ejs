@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Post</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>✏️ Edit Post</h1>
+      <p>Update your content</p>
+    </header>
+
+    <main class="container">
+      <div class="card">
+        <form
+          class="post-form"
+          method="post"
+          action="/posts/<%= ps.id %>?_method=patch"
+        >
+          <textarea class="textarea" name="content" rows="6" required>
+<%= ps.content %></textarea
+          >
+
+          <div class="actions">
+            <button class="btn submit">Update Post</button>
+            <a href="/posts" class="btn secondary">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

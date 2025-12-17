@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Details</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>📖 Post Details</h1>
+      <p>Read the full post</p>
+    </header>
+
+    <main class="container">
+      <div class="card">
+        <h3 class="user">@<%= pos.user %></h3>
+        <p class="content"><%= pos.content %></p>
+
+        <div class="actions">
+          <a href="/posts" class="btn view">← Back to Posts</a>
+          <a href="/posts/<%= pos.id %>/new" class="btn edit">Edit</a>
+          <form method="post" action="/posts/<%= pos.id %>?_method=delete">
+            <button class="btn delete">Delete</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

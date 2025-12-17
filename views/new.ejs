@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Post</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>✍️ Create New Post</h1>
+      <p>Share your thoughts with the world</p>
+    </header>
+
+    <main class="container">
+      <div class="card">
+        <form class="post-form" method="post" action="/posts">
+          <input
+            class="input"
+            type="text"
+            placeholder="Enter your username"
+            name="user"
+            required
+          />
+
+          <textarea
+            class="textarea"
+            placeholder="Write your post..."
+            name="content"
+            rows="6"
+            required
+          ></textarea>
+
+          <button class="btn submit">Publish</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

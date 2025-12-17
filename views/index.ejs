@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Posts</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Blog Posts</h1>
+      <p>Read what people are sharing</p>
+      <a class="create-btn" href="http://localhost:3000/posts/new"
+        >+ Create New Post</a
+      >
+    </header>
+
+    ```
+    <main class="container">
+      <% for(po of post) { %>
+      <div class="card">
+        <div class="card-header">
+          <h3 class="user">@<%= po.user %></h3>
+        </div>
+        <p class="content"><%= po.content %></p>
+        <div class="actions">
+          <a class="btn view" href="http://localhost:3000/posts/<%= po.id %>"
+            >View</a
+          >
+          <a
+            class="btn edit"
+            href="http://localhost:3000/posts/<%= po.id %>/new"
+            >Edit</a
+          >
+          <form method="post" action="/posts/<%= po.id %>?_method=delete">
+            <button class="btn delete">Delete</button>
+          </form>
+        </div>
+      </div>
+      <% } %>
+    </main>
+  </body>
+</html>

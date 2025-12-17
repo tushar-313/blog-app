@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #a5f78c, #95ec7f);
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #d4f776;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  color: #5a189a;
+}
+
+.header p {
+  margin: 10px 0 20px;
+  color: #555;
+  font-weight: 900;
+}
+
+.create-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #5a189a;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.create-btn:hover {
+  background: #7b2cbf;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0px 8px 20px rgb(114, 112, 112);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.user {
+  margin: 0;
+  font-style: italic;
+  color: #3a0ca3;
+}
+
+.content {
+  margin: 15px 0 20px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.view {
+  background: #276477;
+  color: #fff;
+}
+
+.edit {
+  background: #c08c38;
+  color: #fff;
+}
+
+.delete {
+  background: #ad1d29;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input,
+.textarea {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #5a189a;
+  box-shadow: 0 0 0 2px rgba(90, 24, 154, 0.2);
+}
+
+.submit {
+  align-self: flex-start;
+  background: #5a189a;
+  color: #fff;
+}
+
+.submit:hover {
+  background: #7b2cbf;
+}
+.secondary {
+  background: #8d1209;
+  color: #fff9f9;
+}
+
+.secondary:hover {
+  background: #f32e2e;
+}
